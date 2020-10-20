@@ -36,7 +36,7 @@ router.get("/:id", (req, res) => {
 });
 // GET http://localhost:5000/api/plants/2 tested in POSTMAN
 
-// add
+// add plant
 router.post("/", (req, res) => {
   const plantData = req.body;
 
@@ -50,7 +50,7 @@ router.post("/", (req, res) => {
 });
 // POST http://localhost:5000/api/plants tested in Postman
 
-// update Plants
+// update plants
 router.put("/:id", (req, res) => {
   const { id } = req.params;
   const changes = req.body;
@@ -73,7 +73,7 @@ router.put("/:id", (req, res) => {
 });
 // PUT http://localhost:5000/api/plants/3 tested in Postman
 
-// remove
+// Delete plants
 router.delete("/:id", (req, res) => {
   const { id } = req.params;
 
