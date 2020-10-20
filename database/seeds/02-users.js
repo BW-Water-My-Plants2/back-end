@@ -9,13 +9,13 @@ exports.seed = function(knex) {
             fullname: "Mark Smith",
             username: "MarkyMark",
             password: "abc123",
-            phonenumber: "12125555555"
+            phonenumber: "JoeMoe@email.com"
           },
           {
             fullname: "Jill Dean",
             username: "Jilly",
             password: "abc123",
-            phonenumber: "16465555555"
+            phonenumber: "JoeMoe@email.com"
           }
         ]);
       });
