@@ -64,7 +64,7 @@ router.put("/:id", (req, res) => {
       } else {
         res
           .status(404)
-          .json({ message: "Could not find plant with given Id." });
+          .json({ message: "Could not find plant with Id provided." });
       }
     })
     .catch(error => {
