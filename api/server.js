@@ -18,7 +18,7 @@ server.use('/api/plants', authenticate, plantsRouter);
 //server.use('/api/users', usersRouter)
 
 server.get("/", (req, res) => {
-    res.send("PLease Water Me")
+    res.send("Please Water Me")
 });
 
 module.exports = server;
