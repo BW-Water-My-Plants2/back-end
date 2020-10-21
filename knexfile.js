@@ -1,4 +1,6 @@
+const pgConnection = process.env.DATABASE_URL;
 module.exports = {
+  
   development: {
     client: 'sqlite3',
     connection: { filename: './database/auth.db3' },
@@ -18,14 +20,20 @@ module.exports = {
     migrations: {directory:"./database/migrations"}, 
     seeds: {directory: "./database/seeds"}
     },
-    production: {
-      client: "sqlite3",
-      connection: {
-        filename: "./database/test.db3",
+    production:  {
+      client: "pg",
+      connection: pgConnection,
+      pool: {
+        min: 2,
+        max: 10,
       },
-      useNullAsDefault:true,
-      migrations: {directory:"./database/migrations"}, 
-      seeds: {directory: "./database/seeds"}
+      migrations: {
+        directory: "./database/migrations",
       },
+      seeds: {
+        directory: "./database/seeds",
+      },
+      useNullAsDefault: true,
+    },
 
   };
