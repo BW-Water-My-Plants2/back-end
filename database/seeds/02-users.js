@@ -9,15 +9,16 @@ exports.seed = function(knex) {
             fullname: "Mark Smith",
             username: "MarkyMark",
             password: "abc123",
-            email: "JoeMoe@email.com",
             phonenumber: "1234562311",
+            email: "JoeMoe@email.com",
           },
           {
             fullname: "Jill Dean",
             username: "Jilly",
             password: "abc123",
-            email: "JoeMoe@email.com",
             phonenumber: "1234562312",
+            email: "JoeMoe@email.com",
+            
           }
         ]);
       });
